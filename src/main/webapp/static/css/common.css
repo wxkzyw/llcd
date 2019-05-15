@@ -1,0 +1,322 @@
+html body{
+    font-family: "微软雅黑","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    overflow-x: hidden !important;
+}
+a{
+    -webkit-tap-highlight-color:transparent;
+}
+a:hover,
+a:active,
+a:focus{
+    text-decoration: none;
+}
+.nav-shadow{
+    background-color: #fff !important;
+    box-shadow: 0px 2px 4px #ccc;
+}
+/*灰色背景*/
+.bg-gray{
+    background-color: #f3f3f3;
+}
+/*白色背景*/
+.bg-white{
+    background-color: #fff !important;
+}
+
+
+/* nav */
+.navbar{
+    background-color: transparent;
+    color: #000;
+    border-color: transparent;
+    margin-bottom: 0;
+}
+.navbar .navbar-header .icon-menu{
+    color: #e60012;
+}
+.navbar .navbar-header>.nav-menu {
+    border-color: transparent;
+    background-color: transparent;
+}
+.navbar .navbar-header>.nav-menu:focus,
+.navbar .navbar-header>.nav-menu:hover,
+.navbar .navbar-header>.nav-menu:active{
+    background-color: transparent;
+}
+.navbar .navbar-header .navbar-brand{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-header .navbar-brand>.navbar-text {
+    margin-left: 0;
+    font-size: 16px;
+    font-weight: 900;
+    color: #000;
+}
+#nav-menu{
+    border-top: none;
+}
+#nav-menu>.nav-list>li>a{
+    color: #000;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+#nav-menu>.nav-list>li.active>a{
+    color: #e60012;
+    background-color: transparent;
+}
+#nav-menu>.nav-list>li.dropdown>ul.download{
+    min-width: 0;
+    width: 100%;
+    border: none;
+    border-top: 2px solid #e60012;
+    padding: 0;
+}
+#nav-menu>.nav-list>li.dropdown>.download>li{
+    border-bottom: 1px solid #c3c3c3;
+}
+#nav-menu>.nav-list>li.dropdown>.download>li:last-child{
+    border-bottom: none;
+}
+#nav-menu>.nav-list>li.dropdown>.download>li>a{
+    color: #000;
+}
+/*语言切换*/
+#language>a{
+    margin: 9px 15px;
+    padding: 5px !important;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+#nav-menu .drop-down{
+    transform: rotate(270deg);
+}
+#language>.language-list{
+    min-width: 0;
+    width: 100%;
+    border: none;
+    padding: 0;
+}
+#language>.language-list>li{
+    border-bottom: 1px solid #c3c3c3;
+}
+#language>.language-list>li:last-child{
+    border-bottom: none;
+}
+#language>.language-list>li>a{
+    color: #000;
+}
+
+
+/* footer */
+.footer{
+    border-top: 1px solid #dbdbdb;
+}
+/*底部导航 备用*/
+/*.footer>.footer-top{*/
+    /*padding: 0 115px;*/
+    /*margin: 0 auto;*/
+    /*height: 54px;*/
+    /*line-height: 54px;*/
+    /*border-bottom: 1px solid #dbdbdb;*/
+/*}*/
+/*.footer>.footer-top>li{*/
+    /*padding: 0 40px 0 0;*/
+/*}*/
+/*.footer>.footer-top>li>a{*/
+    /*color: #000;*/
+    /*font-size: 14px;*/
+/*}*/
+/*.footer>.footer-top>li>a:hover,*/
+/*.footer>.footer-top>li>a:active,*/
+/*.footer>.footer-top>li>a:focus,*/
+/*.footer>.footer-top>li>a:visited{*/
+    /*text-decoration: none;*/
+/*}*/
+/*.footer>.footer-top>li>a:hover{*/
+    /*color: #e60012;*/
+/*}*/
+.footer>.footer-body{
+    padding: 10px 100px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.footer>.footer-body>.row{
+    margin-right: 0;
+}
+.footer .footer-contact>.row{
+    margin: 0;
+}
+.footer .footer-contact>.row>div{
+    padding: 0 15px;
+}
+.footer .footer-contact p,
+.footer .footer-contact p>a{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    color: #000;
+}
+.footer .footer-contact p>span{
+    margin-right:10px;
+}
+/*底部联系二维码  备用*/
+/*.footer .footer-ecode{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+/*.footer .footer-ecode>.ecode-img{*/
+    /*padding: 0;*/
+/*}*/
+/*.footer .footer-ecode>.ecode-img>div{*/
+    /*display: inline-block;*/
+/*}*/
+/*.footer .footer-ecode>.ecode-img p{*/
+    /*padding-top: 10px;*/
+    /*text-align: center;*/
+/*}*/
+.footer>.footer-bottom{
+    padding: 20px 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+/*return top*/
+#back-top{
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+    cursor: pointer;
+    display: none;
+}
+#back-top span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #929292;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+
+
+
+
+/* 超小屏幕（手机，小于 768px） */
+@media (min-width: 320px ) and ( max-width: 767px ){
+    /*nav*/
+    .navbar .navbar-header>.navbar-toggle{
+        margin: 4px 0;
+    }
+    .navbar .navbar-header>.navbar-brand{
+        padding: 10px 0 10px 10px;
+    }
+    .navbar .navbar-header>.navbar-brand>.navbar-text {
+        margin-left: 0;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .nav-list{
+        background-color: #fff;
+        margin: 0 -15px;
+    }
+    .nav-list>li{
+        border-bottom: 1px solid #c3c3c3;
+    }
+    #nav-menu>.nav-list>li.dropdown>.download {
+        border-top: 1px solid #c3c3c3;
+    }
+    #language>a{
+        margin: 0px;
+        padding: 15px 20px !important;
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+    .open .dropdown-menu>li>a {
+        padding: 15px 20px !important;
+    }
+
+    /*footer*/
+    /*.footer>.footer-top{*/
+        /*display: none;*/
+    /*}*/
+    .footer>.footer-body{
+        padding:10px;
+    }
+    .footer>.footer-body>.row{
+        display: block;
+        margin: 0;
+    }
+    /*.footer .footer-contact,*/
+    /*.footer .footer-ecode{*/
+        /*padding: 0;*/
+    /*}*/
+    .footer .footer-contact {
+        padding: 0;
+    }
+    .footer .footer-contact>.row>div{
+        margin-bottom: 20px;
+    }
+    /*.footer .footer-ecode>.ecode-img{*/
+        /*text-align: center;*/
+    /*}*/
+    /*.footer .ecode-img p{*/
+        /*text-align: center;*/
+    /*}*/
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px ) and ( max-width: 991px){
+    /*nav*/
+    #nav-menu .nav-list{
+        right: 8%;
+        margin-right: 0px;
+    }
+    #nav-menu>.nav>li>a{
+        padding: 15px 5px;
+        font-size: 12px;
+    }
+    #language>a {
+        margin: 9px 0 9px 10px !important;
+    }
+    .navbar .navbar-header>.navbar-brand>.navbar-text{
+        margin-right: 0px;
+    }
+    .dropdown-menu>li>a {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    /*footer*/
+    /*.footer .footer-top{*/
+        /*display: none;*/
+    /*}*/
+    .footer .footer-body{
+        padding: 20px 20px;
+        margin: 0 auto;
+    }
+    .footer .footer-contact{
+        padding-left: 25px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px ) and ( max-width: 1199px) {
+    /*nav*/
+    #nav-menu>.nav-list>li>a{
+        padding: 15px 10px;
+    }
+
+    /*footer*/
+    /*.footer .footer-top{*/
+        /*padding: 0 45px;*/
+    /*}*/
+    .footer .footer-body{
+        padding: 10px 30px;
+    }
+}
+

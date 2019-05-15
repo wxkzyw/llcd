@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.justech.luolesite.dao.frontWebDao">
+
+    <select id="getCompanyContent" parameterType="Map" resultType="com.thinkgem.jeesite.modules.cms.entity.ArticleData">
+SELECT
+	b.*
+FROM
+	cms_article a
+LEFT JOIN cms_article_data b ON a.id=b.id
+WHERE
+	a.category_id = #{categoryid} AND a.del_flag=0 AND a.keywords=#{keywords}
+ORDER BY a.create_date DESC
+LIMIT 1
+    </select>
+
+    <select id="getProducts" parameterType="Map" resultType="com.thinkgem.jeesite.modules.cms.entity.Article">
+        SELECT
+	*
+FROM
+	cms_article
+WHERE
+	category_id = #{categoryid}
+AND del_flag = 0 AND keywords=#{keywords}
+ORDER BY
+	weight DESC
+LIMIT #{num}
+
+    </select>
+
+	<select id="getNewsArticle" parameterType="Map" resultType="com.thinkgem.jeesite.modules.cms.entity.Article">
+		SELECT
+	*
+FROM
+	cms_article
+where category_id=#{categoryid} AND keywords=#{keywords} AND del_flag = 0
+ORDER BY update_date DESC
+LIMIT #{limit}
+	</select>
+
+	<select id="getLimitNewsArticle" parameterType="Map" resultType="com.thinkgem.jeesite.modules.cms.entity.Article">
+		SELECT
+	*
+FROM
+	cms_article
+where category_id=#{categoryid} AND keywords=#{keywords} AND del_flag = 0
+ORDER BY update_date DESC
+LIMIT #{start},#{pageSize}
+	</select>
+
+	<select id="getNewsArticleData" parameterType="String" resultType="com.thinkgem.jeesite.modules.cms.entity.ArticleData">
+		SELECT
+	*
+FROM
+	cms_article_data
+WHERE
+	id = #{value}
+	</select>
+
+	<select id="getProductID" parameterType="String" resultType="String">
+		SELECT id FROM cms_article where description =#{value}
+	</select>
+
+	<select id="getArticlesCount" parameterType="Map" resultType="int">
+		SELECT
+	COUNT(1)
+FROM
+	cms_article
+WHERE
+	category_id = #{categoryid}
+AND del_flag = 0
+AND keywords = #{keywords}
+	</select>
+
+	<select id="getOnlyArticel" parameterType="String" resultType="com.thinkgem.jeesite.modules.cms.entity.Article">
+		SELECT
+	*
+FROM
+	cms_article
+WHERE id=#{value}
+	</select>
+
+	<select id="getPrevArticle" parameterType="Map" resultType="com.thinkgem.jeesite.modules.cms.entity.Article">
+		SELECT
+		*
+		FROM
+		cms_article
+		WHERE
+		keywords = #{keywords}
+		AND del_flag = 0
+		AND category_id = #{categoryid}
+		AND update_date &gt; (
+		SELECT
+		update_date
+		FROM
+		cms_article
+		WHERE
+		id = #{newsid}
+		)ORDER BY update_date ASC LIMIT 1
+		</select>
+
+	<select id="getNextArticle" parameterType="Map" resultType="com.thinkgem.jeesite.modules.cms.entity.Article">
+		SELECT
+		*
+		FROM
+		cms_article
+		WHERE
+		keywords =#{keywords}
+		AND del_flag = 0
+		AND category_id = #{categoryid}
+		AND update_date &lt; (
+		SELECT
+		update_date
+		FROM
+		cms_article
+		WHERE
+		id = #{newsid}
+		)ORDER BY update_date DESC LIMIT 1
+	</select>
+
+	<select id="getArticle" parameterType="Map" resultType="com.thinkgem.jeesite.modules.cms.entity.Article">
+		SELECT
+	*
+FROM
+	cms_article
+WHERE
+	keywords = #{keywords}
+AND del_flag = 0
+AND category_id = #{categoryid}
+ORDER BY weight desc
+	</select>
+
+	<select id="getProductIntroduction" parameterType="String" resultType="com.thinkgem.jeesite.modules.cms.entity.ArticleData">
+		SELECT
+	*
+FROM
+	cms_article_data
+WHERE
+	FIND_IN_SET(
+		#{value,jdbcType=VARCHAR},
+		relation
+	)
+	</select>
+
+</mapper>

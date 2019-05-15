@@ -1,0 +1,419 @@
+.banner img{
+    min-height: 150px;
+}
+
+
+.title-bread{
+    margin-bottom: 30px;
+}
+.title-bread>p{
+    margin: 0;
+    font-size: 14px;
+}
+.title-bread a{
+    color: #000;
+}
+.title-bread a:last-child{
+     font-weight: 700;
+}
+
+
+/*关于村田*/
+.about-main{
+    padding: 30px 100px;
+    margin-bottom: 90px;
+}
+.about-main>.container-fluid>.about-content p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 0;
+    text-align: justify;
+    text-justify: newspaper;
+    word-break: break-all;
+}
+
+/*新闻列表*/
+.news{
+    padding: 30px 100px;
+}
+.news>.container-fluid>.content>.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.news>.container-fluid>.news-page{
+    text-align: right;
+}
+.news>.container-fluid>.news-page>ul>li.page-disabled a{
+    color: #c3c3c3;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.news>.container-fluid>.news-page>ul>li.active a{
+    border-color:#e60012;
+    color: #fff;
+    background-color: #e60012;
+}
+.news>.container-fluid>.news-page>ul>li>a{
+    color: #000;
+}
+.news>.container-fluid>.news-page>ul>li>a>span{
+    font-size: 12px;
+}
+.news>.container-fluid>.news-page>ul>li>a.prev:hover span,
+.news>.container-fluid>.news-page>ul>li>a.next:hover span{
+    color: #e60012;
+}
+.news>.container-fluid>.news-page>ul>li>a:hover{
+    background-color: transparent;
+    color: #e60012;
+    border: 1px solid #ddd;
+}
+.news>.container-fluid>.news-page>ul>li>a.active{
+    color: #fff;
+    background-color: #e60012;
+}
+
+/*新闻详情*/
+.news .news-details>.news-title{
+    color: #000;
+}
+.news .news-details>.news-title>h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.news .news-details>.news-title>p{
+    font-size: 14px;
+}
+.news .news-details>.news-content{
+    padding: 20px 0;
+}
+.news .news-details>.news-content img{
+    width: 40%;
+    margin: 0 auto 20px;
+}
+.news .news-details>.news-content p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    text-indent: 2em;
+}
+.news .news-details>.news-turn{
+    margin-bottom: 20px;
+}
+.news .news-details>.news-turn>.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.news .news-details>.news-turn .prev{
+    text-align: left;
+    background: url("../images/prev_page.png") no-repeat left center;
+    padding-left: 20px;
+    padding-right: 0;
+}
+.news .news-details>.news-turn .next{
+    text-align: right;
+    background: url("../images/next_page.png") no-repeat right center;
+    padding-right: 20px;
+    padding-left: 0;
+}
+.news .news-details>.news-turn .prev,
+.news .news-details>.news-turn .next{
+    height: 32px;
+    line-height: 32px;
+}
+.news .news-details>.news-turn .prev>a,
+.news .news-details>.news-turn .next>a{
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    line-height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news .news-details>.news-turn .prev>a:hover,
+.news .news-details>.news-turn .next>a:hover{
+    color: #e60012;
+}
+
+/*产品中心*/
+.products-list>.products-item>a>.products-item-wrap>img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*产品详情*/
+.switch-tab{
+    border-bottom: 1px solid #dbdbdb;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+.switch-tab>li{
+    text-align: left;
+    padding-left: 0;
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+     vertical-align: top;
+}
+.switch-tab>li>a{
+    display: inline-block;
+    padding: 10px 0px;
+    color: #000;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.switch-tab>li.active>a{
+    color: #e60012;
+    border-bottom: 2px solid #e60012;
+}
+.tab-content>.tab-pane{
+    margin-top: 60px;
+}
+#proIntroduce>.row{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+#proIntroduce>.row p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #000;
+}
+#proParameter .parameter-item{
+    margin-bottom: 60px;
+}
+#proParameter .parameter-title{
+    margin-bottom: 60px;
+}
+#proParameter .parameter-title>h4{
+    font-size: 30px;
+    color: #000;
+}
+#proParameter .parameter-title>p{
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 30px;
+}
+#proParameter .parameter-item img{
+    margin: 0 auto;
+}
+.pro-case-wrap{
+    display: inline-block;
+    text-align: center;
+}
+.pro-case-wrap a{
+    font-size: 16px;
+    color: #000;
+}
+.pro-case-wrap p{
+     margin: 20px 0;
+    font-size: inherit;
+}
+.pro-case-wrap video{
+     max-width: 100%;
+}
+.products-details-cover img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+/*产品应用*/
+#appContent .pro-case-wrap p{
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #888686;
+    color: #fff;
+    border-radius: 6px;
+}
+.case-video,
+.case-img{
+    margin-bottom: 30px;
+}
+
+/*联系我们*/
+.contact .main-content>.row>.addr{
+    margin-bottom: 20px;
+}
+.contact .addr span.iconfont{
+    margin-right: 10px;
+}
+.contact .addr p,
+.contact .addr p>a{
+    color:#000;
+}
+
+/*资料下载*/
+#downloadContent .pro-case-wrap img{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* 超小屏幕（手机，大于等于 320px） */
+@media (min-width: 320px ) and ( max-width: 767px ){
+    .content-wrap{
+        padding: 10px 10px 0;
+    }
+
+    .title-bread{
+       margin-bottom: 10px;
+    }
+
+    /*关于村田*/
+
+    /*新闻列表*/
+    .news .news-details>.news-title>h2{
+        font-size: 16px;
+    }
+    .news>.container-fluid>.news-page{
+        text-align: center;
+    }
+    .news>.container-fluid>.news-page>ul>li>a,
+    .news>.container-fluid>.news-page>ul>li>span {
+        padding: 6px 10px;
+    }
+
+     /*新闻详情*/
+    .news .news-details>.news-content img{
+        width: 80%;
+    }
+    .news .news-details>.news-turn .next{
+        text-align: left;
+        background: url("../images/next_page.png") no-repeat left center;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    /*产品中心*/
+    /*产品详情*/
+    .tab-content>.tab-pane{
+        margin-top: 30px;
+    }
+    #proParameter .parameter-item,
+    #proParameter .parameter-title{
+        margin-bottom: 30px;
+    }
+    /*.switch-tab>li{*/
+        /*margin-right: 10px;*/
+    /*}*/
+    .switch-tab>li>a{
+        font-size: 12px;
+    }
+    #proIntroduce>.row{
+        display: block;
+        text-align: left;
+    }
+    #proIntroduce>.row img{
+        margin: 0 auto;
+    }
+    #proIntroduce>.row p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #proParameter .parameter-title>h4{
+        font-size: 20px;
+    }
+    .pro-case-wrap p {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    /*产品应用*/
+
+
+    /*联系我们*/
+
+
+    /*资料下载*/
+    #downloadContent>.tab-pane>.row>div{
+        margin-bottom: 20px;
+    }
+
+    #productsManual,
+    #productsDirectory{
+        text-align: center;
+    }
+
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px ) and ( max-width: 991px){
+    .content-wrap{
+        padding: 20px 20px;
+    }
+    .title-bread{
+       margin-bottom: 20px;
+   }
+
+    /*关于村田*/
+    /*新闻列表*/
+
+    /*新闻详情*/
+    .news .news-details>.news-title>h2{
+        font-size: 18px;
+    }
+    .news .news-details>.news-content img{
+        width: 60%;
+    }
+
+    /*产品中心*/
+    /*产品详情*/
+    .switch-tab>li{
+        margin-right: 20px;
+    }
+
+
+    /*产品应用*/
+
+
+    /*联系我们*/
+
+
+    /*资料下载*/
+
+
+
+
+
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px ) and ( max-width: 1199px) {
+    .content-wrap{
+        padding: 30px 30px;
+    }
+    .title-bread{
+       margin-bottom: 30px;
+    }
+
+    /*关于村田*/
+    /*新闻列表*/
+    /*新闻详情*/
+    /*产品中心*/
+    /*产品详情*/
+
+
+    /*产品应用*/
+
+
+    /*联系我们*/
+
+
+    /*资料下载*/
+
+
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px ) {  }
