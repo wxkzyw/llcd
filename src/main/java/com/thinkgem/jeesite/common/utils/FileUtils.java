@@ -809,7 +809,9 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
 		response.reset(); // 告诉客户端允许断点续传多线程连接下载,响应的格式是:Accept-Ranges: bytes
 		if (pastLength != 0) {
 			response.setHeader("Accept-Ranges", "bytes");// 如果是第一次下,还没有断点续传,状态是默认的 200,无需显式设置;响应的格式是:HTTP/1.1 200 OK
-			// 不是从最开始下载, 响应的格式是: Content-Range: bytes [文件块的开始字节]-[文件的总大小 - 1]/[文件的总大小]
+			response.setHeader("ETag",fileName);
+			// 不是从最开始下载, 响应的格式是: Content-Range: bytes [文件块的开始字节]-[文件的总大小
+			// - 1]/[文件的总大小]
 			logger.debug("---------------不是从开始进行下载！服务器即将开始断点续传...");
 			switch (rangeSwitch) {
 				case 1: { // 针对 bytes=27000- 的请求
