@@ -126,6 +126,8 @@
                 <div class="col-md-5 about-video">
                     <video id="aboutVideo" class="video-js vjs-default-skin" controls poster="${ctxStatic}/images/about-cover.png" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow"  x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint">
                         <source src="${pageContext.request.contextPath}/userfiles/1/files/video/about.mp4" type="video/mp4">
+                        不支持视频
+
                     </video>
                 </div>
                 <div class="col-md-7 about-describe">
