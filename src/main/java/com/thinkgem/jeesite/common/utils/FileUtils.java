@@ -802,7 +802,6 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
 		} else { // 从开始进行下载
 			contentLength = fileLength; // 客户端要求全文下载
 		}
-
 		// 如果设设置了Content-Length，则客户端会自动进行多线程下载。如果不希望支持多线程，则不要设置这个参数。 响应的格式是:
 		// Content-Length: [文件的总大小] - [客户端请求的下载的文件块的开始字节]
 		// ServletActionContext.getResponse().setHeader("Content- Length", new Long(file.length() - p).toString());
