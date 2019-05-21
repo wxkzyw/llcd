@@ -125,9 +125,7 @@
             <div class="row about-content">
                 <div class="col-md-5 about-video">
                     <video id="aboutVideo" class="video-js vjs-default-skin" controls poster="${ctxStatic}/images/about-cover.png" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow"  x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint">
-                        <source src="${pageContext.request.contextPath}/userfiles/1/files/video/about.mp4" type="video/mp4">
-                        不支持视频
-
+                            <source src="${pageContext.request.contextPath}/f/downFile/about" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-7 about-describe">
@@ -149,7 +147,7 @@
                 <div class="col-md-5 products-video">
                     <div class="products-video-wrap">
                         <video id="productsVideo" class="video-js vjs-default-skin" controls poster="${ctxStatic}/images/products-cover.png">
-                            <source src="${pageContext.request.contextPath}/userfiles/1/files/video/products.mp4" type="video/mp4">
+                            <source src="${pageContext.request.contextPath}/f/downFile/products" type="video/mp4">
                         </video>
                         <div class="row">
                             <div class="col-md-6 col-xs-12 col-sm-12 products-directory">

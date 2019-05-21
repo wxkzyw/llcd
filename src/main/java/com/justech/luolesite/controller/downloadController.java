@@ -120,4 +120,15 @@ public class downloadController {
 		modelAndView.setViewName("luolePages/english/download-productsManual");
 		return modelAndView;
 	}
+
+	/**
+	 * 首页-视频
+	 * @param response
+	 * @param filePath
+	 */
+	@RequestMapping("/downFile/{filePath}")
+	public void downloadFile(HttpServletResponse response,@PathVariable String filePath){
+		filePath="/userfiles/1/files/video/"+filePath+".mp4";
+		frontWebService.downloadFile(response,filePath);
+	}
 }

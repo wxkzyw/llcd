@@ -5,7 +5,6 @@ import com.justech.luolesite.entity.fileEntity;
 import com.justech.luolesite.entity.imgEntity;
 import com.thinkgem.jeesite.modules.cms.entity.Article;
 import com.thinkgem.jeesite.modules.cms.entity.ArticleData;
-import org.hibernate.validator.internal.engine.messageinterpolation.parser.ELState;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -299,6 +298,30 @@ public class frontWebService {
 				}
 		}
 			}
+		}
+	}
+
+	//下载文件
+	public void downloadFile(HttpServletResponse response, String filePath) {
+		try {
+			File file=new File(filePath);
+			String filename=file.getName();
+			// 以流的形式下载文件。
+			InputStream fis = new BufferedInputStream(new FileInputStream(file));
+			byte[] buffer = new byte[fis.available()];
+			fis.read(buffer);
+			fis.close();
+			// 清空response
+			response.reset();
+
+			response.setContentType("application/octet-stream;charset=UTF-8");
+			response.setHeader("Content-disposition", "attachment;filename=" + filename);
+			OutputStream ouputStream = response.getOutputStream();
+			ouputStream.write(buffer);
+			ouputStream.flush();
+			ouputStream.close();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 
