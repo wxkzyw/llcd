@@ -338,14 +338,6 @@
 </div>
 <script>
     document.body.addEventListener('touchstart', function(){ });
-
-    $(function () {
-        document.querySelector("#aboutVideo").src="${pageContext.request.contextPath}/userfiles/1/files/video/about.mp4";
-        document.querySelector("#aboutVideo").load();
-
-        document.querySelector("#productsVideo").src="${pageContext.request.contextPath}/userfiles/1/files/video/products.mp4";
-        document.querySelector("#productsVideo").load();
-    })
 </script>
 </body>
 </html>
