@@ -119,7 +119,7 @@ public class productController {
 			}
 
 			String imgpath=seriesSimpleProductApplicationPath+bean+imagePath;
-			List<imgEntity> imgs=frontWebService.getIndexImgs(request,imgpath);
+			List<imgEntity> imgs=frontWebService.getProductsImgs(request,imgpath);
 			application.setImgs(imgs);
 
 			String videopath=seriesSimpleProductApplicationPath+bean+videoPath;
@@ -206,7 +206,7 @@ public class productController {
 			}
 
 			String imgpath=seriesComplexProductApplicationPath+bean+imagePath;
-			List<imgEntity> imgs=frontWebService.getIndexImgs(request,imgpath);
+			List<imgEntity> imgs=frontWebService.getProductsImgs(request,imgpath);
 			application.setImgs(imgs);
 
 			String videopath=seriesComplexProductApplicationPath+bean+videoPath;
@@ -294,7 +294,7 @@ public class productController {
 			}
 
 			String imgpath=seriesEnglishProductApplicationPath+bean+imagePath;
-			List<imgEntity> imgs=frontWebService.getIndexImgs(request,imgpath);
+			List<imgEntity> imgs=frontWebService.getProductsImgs(request,imgpath);
 			application.setImgs(imgs);
 
 			String videopath=seriesEnglishProductApplicationPath+bean+videoPath;

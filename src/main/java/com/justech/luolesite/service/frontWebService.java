@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @Author: WangXiaoKun
@@ -51,6 +53,58 @@ public class frontWebService {
 
 		}
 		return list;
+	}
+
+	//获得产品下所有图片名
+	public List<imgEntity> getProductsImgs(HttpServletRequest request, String homePagePath) {
+		List<imgEntity> list = new ArrayList<imgEntity>();
+		String homePageImgsUrl = request.getSession().getServletContext().getRealPath(homePagePath);
+		String imgurl = "";
+		String imgSuffix = "";
+
+
+		File file = new File(homePageImgsUrl);
+		if (!file.exists()) {
+			file.mkdirs();
+		}
+		File[] imgs = file.listFiles();//获取所有子文件夹
+		if (imgs.length > 0 && imgs != null) {
+			imgEntity[] imgSort=new imgEntity[imgs.length];
+			for (File file_sec : imgs) {
+				String fileName = file_sec.getName();
+				if (fileName.endsWith(".jpg") || fileName.endsWith(".png") || fileName.endsWith(".gif")) {
+						imgEntity bean = new imgEntity();
+						imgSuffix = fileName.substring(fileName.lastIndexOf("."));
+						imgurl = fileName.substring(0, fileName.lastIndexOf("."));
+						bean.setImgSuffix(imgSuffix);
+						bean.setImgName(imgurl);
+					if (isContainNumber(fileName)){
+						String imgNameNum=fileName.substring(fileName.lastIndexOf("-")+1,fileName.lastIndexOf("."));
+						imgSort[Integer.parseInt(imgNameNum)-1]=bean;
+					}
+					else {
+						list.add(bean);
+					}
+				}
+			}
+			//按数字排序
+			if (list.size()==0){
+				for (int i=0;i<imgSort.length;i++){
+					list.add(imgSort[i]);
+				}
+			}
+		}
+		return list;
+	}
+
+	public static boolean isContainNumber(String company) {
+
+		Pattern p = Pattern.compile("[0-9]");
+		Matcher m = p.matcher(company);
+		if (m.find()) {
+			return true;
+		}
+		return false;
 	}
 
 	//获取指定文件下视频名
@@ -292,7 +346,7 @@ public class frontWebService {
 	 * @return
 	 */
 	public List<imgEntity> getProductCaseImg(String productCasePath,HttpServletRequest request){
-		return getIndexImgs(request,productCasePath);
+		return getProductsImgs(request,productCasePath);
 	}
 
 	/**

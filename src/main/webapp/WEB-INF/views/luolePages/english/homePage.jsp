@@ -120,7 +120,7 @@
         <div class="container-fluid">
             <div class="title text-center">
                 <h3>Company Introduction</h3>
-                <p>公司简介</p>
+               <%-- <p>公司简介</p>--%>
             </div>
             <div class="row about-content">
                 <div class="col-md-5 about-video">
@@ -141,7 +141,7 @@
         <div class="container-fluid">
             <div class="title text-center">
                 <h3>Product Center</h3>
-                <p>产品中心</p>
+                <%--<p>产品中心</p>--%>
             </div>
             <div class="row main-content">
                 <div class="col-md-5 products-video">
@@ -191,7 +191,7 @@
         <div class="container-fluid">
             <div class="title text-center">
                 <h3>News Center</h3>
-                <p>新闻中心</p>
+                <%--<p>新闻中心</p>--%>
             </div>
             <div class="content">
                 <c:forEach items="${news}" var="bean">
