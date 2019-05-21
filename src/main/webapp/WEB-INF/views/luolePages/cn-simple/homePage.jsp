@@ -124,13 +124,10 @@
             </div>
             <div class="row about-content">
                 <div class="col-md-5 about-video">
-                    <%--<video id="aboutVideo" class="video-js vjs-default-skin" controls poster="${ctxStatic}/images/about-cover.png" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow"  x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint">--%>
-                        <%--&lt;%&ndash;<source src="${pageContext.request.contextPath}/f/downFile/about" type="video/mp4">&ndash;%&gt;--%>
-                        <%--<source src="${pageContext.request.contextPath}/userfiles/1/files/video/about.mp4" type="video/mp4">--%>
-                    <%--</video>--%>
-                        <video id="about-video" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"  poster="http://vjs.zencdn.net/v/oceans.png">
-                            <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-                        </video>
+                    <video id="aboutVideo" class="video-js vjs-default-skin" controls poster="${ctxStatic}/images/about-cover.png" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow"  x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint">
+                        <%--<source src="${pageContext.request.contextPath}/f/downFile/about" type="video/mp4">--%>
+                        <source src="${pageContext.request.contextPath}/userfiles/1/files/video/about.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="col-md-7 about-describe">
                      ${indexCompanyIntroduce.content}
