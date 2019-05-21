@@ -4,12 +4,15 @@ import com.justech.luolesite.entity.fileEntity;
 import com.justech.luolesite.service.frontWebService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -127,8 +130,18 @@ public class downloadController {
 	 * @param filePath
 	 */
 	@RequestMapping("/downFile/{filePath}")
-	public void downloadFile(HttpServletResponse response,@PathVariable String filePath){
+	public void downloadFile(HttpServletRequest request,HttpServletResponse response,@PathVariable String filePath){
 		filePath="/userfiles/1/files/video/"+filePath+".mp4";
-		frontWebService.downloadFile(response,filePath);
+		File file=new File(filePath);
+		String userAgent=request.getHeader("User-Agent");
+		if (userAgent.contains("iPhone")||userAgent.contains("iPod")||userAgent.contains("iPad")){
+			try {
+				frontWebService.sendVideo(request,response,file,file.getName());
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}else {
+			frontWebService.downloadFile(response,filePath);
+		}
 	}
 }
