@@ -314,7 +314,6 @@ public class frontWebService {
 			fis.close();
 			// 清空response
 			response.reset();
-
 			response.setContentType("video/mp4");
 			/*response.setHeader("Content-disposition", "attachment;filename=" + filename);*/
 			OutputStream ouputStream = response.getOutputStream();
