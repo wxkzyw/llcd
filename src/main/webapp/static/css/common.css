@@ -181,6 +181,12 @@ a:focus{
     margin: 0;
     font-size: 14px;
 }
+.footer>.footer-bottom a{
+    color: #000;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 0;
+}
 
 /*return top*/
 #back-top{

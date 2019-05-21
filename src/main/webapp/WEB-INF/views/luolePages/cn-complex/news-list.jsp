@@ -254,7 +254,8 @@
         </div>
 
         <p class="footer-bottom text-center">
-            Copyright © 2019 村田精密股份有限公司 All Rights Reserved
+            Copyright © 2019 村田精密股份有限公司 All Rights Reserved<br />
+            <a href=" http://www.beian.miit.gov.cn/" target="_blank">苏ICP备19025059号-1</a>
         </p>
     </footer>
 
