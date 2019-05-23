@@ -132,7 +132,7 @@
                                                 <div class="col-md-3 col-sm-4 col-xs-12">
                                                     <div class="pro-case-wrap">
                                                         <video class="video-js vjs-default-skin" controls poster="${ctxStatic}/images/products-cover.png" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow"  x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint">
-                                                            <source src="${pageContext.request.contextPath}/userfiles/1/files/productApplication/cn-complex/${bean.catagoryName}/video/${video.fileName}${video.fileSuffix}" type="video/mp4">
+                                                            <source src="http://www.tsuntien.com/userfiles/1/files/productApplication/cn-complex/${bean.catagoryName}/video/${video.fileName}${video.fileSuffix}" type="video/mp4">
                                                         </video>
                                                         <p>${video.fileName}</p>
                                                     </div>
@@ -147,7 +147,7 @@
                                             <c:forEach items="${bean.imgs}" var="img">
                                                 <div class="col-md-3 col-sm-4 col-xs-6">
                                                     <div class="pro-case-wrap">
-                                                        <img src="${pageContext.request.contextPath}/userfiles/1/files/productApplication/cn-complex/${bean.catagoryName}/images/${img.imgName}${img.imgSuffix}" alt="${img.imgName}" class="img-responsive">
+                                                        <img src="http://www.tsuntien.com/userfiles/1/files/productApplication/cn-complex/${bean.catagoryName}/images/${img.imgName}${img.imgSuffix}" alt="${img.imgName}" class="img-responsive">
                                                         <p>${img.imgName}</p>
                                                     </div>
                                                 </div>
@@ -166,7 +166,7 @@
                                                 <div class="col-md-3 col-sm-4 col-xs-12">
                                                     <div class="pro-case-wrap">
                                                         <video class="video-js vjs-default-skin" controls poster="${ctxStatic}/images/products-cover.png" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow"  x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint">
-                                                            <source src="${pageContext.request.contextPath}/userfiles/1/files/productApplication/cn-complex/${bean.catagoryName}/video/${video.fileName}${video.fileSuffix}" type="video/mp4">
+                                                            <source src="http://www.tsuntien.com/userfiles/1/files/productApplication/cn-complex/${bean.catagoryName}/video/${video.fileName}${video.fileSuffix}" type="video/mp4">
                                                         </video>
                                                         <p>${video.fileName}</p>
                                                     </div>
@@ -181,7 +181,7 @@
                                             <c:forEach items="${bean.imgs}" var="img">
                                                 <div class="col-md-3 col-sm-4 col-xs-6">
                                                     <div class="pro-case-wrap">
-                                                        <img src="${pageContext.request.contextPath}/userfiles/1/files/productApplication/cn-complex/${bean.catagoryName}/images/${img.imgName}${img.imgSuffix}" alt="${img.imgName}" class="img-responsive">
+                                                        <img src="http://www.tsuntien.com/userfiles/1/files/productApplication/cn-complex/${bean.catagoryName}/images/${img.imgName}${img.imgSuffix}" alt="${img.imgName}" class="img-responsive">
                                                         <p>${img.imgName}</p>
                                                     </div>
                                                 </div>

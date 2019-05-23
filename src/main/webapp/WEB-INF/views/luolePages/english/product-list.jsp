@@ -104,7 +104,7 @@
                         <li class="products-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <a href="${pageContext.request.contextPath}/f/englishProductDetails/${product.id}">
                                 <div class="products-wrap products-item-wrap">
-                                    <img src="${pageContext.request.contextPath}/userfiles/1/images/ProductCenter/${product.description}" alt="${product.imgName}" class="img-responsive">
+                                    <img src="http://www.tsuntien.com/userfiles/1/images/ProductCenter/${product.description}" alt="${product.imgName}" class="img-responsive">
                                     <p class="">${product.imgName}</p>
                                 </div>
                             </a>

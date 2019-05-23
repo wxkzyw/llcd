@@ -104,7 +104,7 @@
                 <c:forEach items="${newsList}" var="news">
                     <div class="row news-item">
                         <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 news-cover">
-                            <a href="${pageContext.request.contextPath}/f/englishNewsDetails/${news.id}"><img src="${pageContext.request.contextPath}/userfiles/1/images/news/${news.description}" alt=""></a>
+                            <a href="${pageContext.request.contextPath}/f/englishNewsDetails/${news.id}"><img src="http://www.tsuntien.com/userfiles/1/images/news/${news.description}" alt=""></a>
                         </div>
                         <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 news-body">
                             <p class="post-time"><fmt:formatDate pattern="yyyy-MM-dd" value="${news.updateDate}"/></p>

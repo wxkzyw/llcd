@@ -105,7 +105,7 @@
         <div class="swiper-wrapper">
             <c:forEach items="${indexImgs}" var="bean" varStatus="status">
                 <div class="swiper-slide banner-item">
-                    <img src="${pageContext.request.contextPath}/userfiles/1/images/homePage-cn-complex/${bean.imgName}${bean.imgSuffix}" alt="banner" class="img-responsive">
+                    <img src="http://www.tsuntien.com/userfiles/1/images/homePage-cn-complex/${bean.imgName}${bean.imgSuffix}" alt="banner" class="img-responsive">
                 </div>
             </c:forEach>
 
@@ -124,7 +124,7 @@
             <div class="row about-content">
                 <div class="col-md-5 about-video">
                     <video id="aboutVideo" class="video-js vjs-default-skin" controls poster="${ctxStatic}/images/about-cover.png" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow"  x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint">
-                        <source src="${pageContext.request.contextPath}/userfiles/1/files/video/about.mp4" type="video/mp4">
+                        <source src="http://www.tsuntien.com/userfiles/1/files/video/about.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-7 about-describe">
@@ -146,7 +146,7 @@
                 <div class="col-md-5 products-video">
                     <div class="products-video-wrap">
                         <video id="productsVideo" class="video-js vjs-default-skin" controls poster="${ctxStatic}/images/products-cover.png">
-                            <source src="${pageContext.request.contextPath}/userfiles/1/files/video/products.mp4" type="video/mp4">
+                            <source src="http://www.tsuntien.com/userfiles/1/files/video/products.mp4" type="video/mp4">
                         </video>
                         <div class="row">
                             <div class="col-md-6 col-xs-12 col-sm-12 products-directory">
@@ -173,7 +173,7 @@
                             <li class="products-item col-md-4 col-xs-12 col-sm-6">
                                 <a href="${pageContext.request.contextPath}/f/cnComplexProductDetails/${product.id}">
                                     <div class="products-wrap">
-                                        <img src="${pageContext.request.contextPath}/userfiles/1/images/ProductCenter/${product.description}" alt="${product.imgName}" class="img-responsive">
+                                        <img src="http://www.tsuntien.com/userfiles/1/images/ProductCenter/${product.description}" alt="${product.imgName}" class="img-responsive">
                                         <p>${product.imgName}</p>
                                     </div>
                                 </a>
@@ -196,7 +196,7 @@
                 <c:forEach items="${news}" var="bean">
                     <div class="row news-item">
                         <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 news-cover">
-                            <a href="${pageContext.request.contextPath}/f/cnComplexNewsDetails/${bean.id}"><img src="${pageContext.request.contextPath}/userfiles/1/images/news/${bean.description}" alt=""></a>
+                            <a href="${pageContext.request.contextPath}/f/cnComplexNewsDetails/${bean.id}"><img src="http://www.tsuntien.com/userfiles/1/images/news/${bean.description}" alt=""></a>
                         </div>
                         <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 news-body">
                             <p class="post-time"><fmt:formatDate pattern="yyyy-MM-dd" value="${bean.updateDate}"/></p>

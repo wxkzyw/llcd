@@ -127,10 +127,10 @@
                                 <c:when test="${introduction.imgName!=null&&introduction.articleData.content!=null}">
                                     <div class="col-md-4 col-sm-12 col-xs-12 products-details-cover">
                                         <c:if test="${newSeriesName==null}">
-                                            <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productIntroduce/${introduction.description}" alt="${introduction.imgName}" class="img-responsive">
+                                            <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productIntroduce/${introduction.description}" alt="${introduction.imgName}" class="img-responsive">
                                         </c:if>
                                         <c:if test="${newSeriesName!=null}">
-                                            <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productIntroduce/${introduction.description}" alt="${introduction.imgName}" class="img-responsive">
+                                            <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productIntroduce/${introduction.description}" alt="${introduction.imgName}" class="img-responsive">
                                         </c:if>
                                     </div>
                                     <div class="col-md-8 col-sm-12 col-xs-12">
@@ -165,10 +165,10 @@
                                                     <p> Ordering Instructions</p>
                                                 </div>
                                                 <c:if test="${newSeriesName==null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
                                                 </c:if>
                                                 <c:if test="${newSeriesName!=null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
                                                 </c:if>
                                             </div>
                                         </c:when>
@@ -181,10 +181,10 @@
                                                     <p> Explosion Drawing Of Roller Reducer</p>
                                                 </div>
                                                 <c:if test="${newSeriesName==null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
                                                 </c:if>
                                                 <c:if test="${newSeriesName!=null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
                                                 </c:if>
                                             </div>
                                         </c:when>
@@ -197,10 +197,10 @@
                                                     <p> Motor Mounting selections</p>
                                                 </div>
                                                 <c:if test="${newSeriesName==null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="安装方式选项" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="安装方式选项" class="img-responsive">
                                                 </c:if>
                                                 <c:if test="${newSeriesName!=null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="安装方式选项" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="安装方式选项" class="img-responsive">
                                                 </c:if>
                                             </div>
                                             d                                </c:when>
@@ -213,10 +213,10 @@
                                                     <p> ${seriesName} Technical Specification </p>
                                                 </div>
                                                 <c:if test="${newSeriesName==null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="${seriesName}性能表" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="${seriesName}性能表" class="img-responsive">
                                                 </c:if>
                                                 <c:if test="${newSeriesName!=null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="${seriesName}性能表" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="${seriesName}性能表" class="img-responsive">
                                                 </c:if>
                                             </div>
                                         </c:when>
@@ -228,10 +228,10 @@
                                                     <p> Drawing&Dimension</p>
                                                 </div>
                                                 <c:if test="${newSeriesName==null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="${seriesName}尺寸图" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="${seriesName}尺寸图" class="img-responsive">
                                                 </c:if>
                                                 <c:if test="${newSeriesName!=null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="${seriesName}尺寸图" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="${seriesName}尺寸图" class="img-responsive">
                                                 </c:if>
                                             </div>
                                         </c:when>
@@ -244,10 +244,10 @@
                                                     <p> Assembly Precision</p>
                                                 </div>
                                                 <c:if test="${newSeriesName==null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
                                                 </c:if>
                                                 <c:if test="${newSeriesName!=null}">
-                                                    <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
+                                                    <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productParameter/${bean.imgName}${bean.imgSuffix}" alt="订购说明" class="img-responsive">
                                                 </c:if>
                                             </div>
                                         </c:when>
@@ -277,11 +277,11 @@
                                         <div class="pro-case-wrap">
                                             <video class="video-js vjs-default-skin" controls poster="${ctxStatic}/images/products-cover.png" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow"  x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint">
                                                 <c:if test="${newSeriesName==null}">
-                                                    <source src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${seriesName}/video/${bean.fileName}${bean.fileSuffix}" type="video/mp4">
+                                                    <source src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${seriesName}/video/${bean.fileName}${bean.fileSuffix}" type="video/mp4">
                                                 </c:if>
 
                                                 <c:if test="${newSeriesName!=null}">
-                                                    <source src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/video/${bean.fileName}${bean.fileSuffix}" type="video/mp4">
+                                                    <source src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/video/${bean.fileName}${bean.fileSuffix}" type="video/mp4">
                                                 </c:if>
                                             </video>
                                             <p>${bean.fileName}</p>
@@ -298,10 +298,10 @@
                                     <div class="col-md-3 col-sm-4 col-xs-12">
                                         <div class="pro-case-wrap">
                                             <c:if test="${newSeriesName==null}">
-                                                <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productCase/${bean.imgName}${bean.imgSuffix}" alt="产品案例" class="img-responsive">
+                                                <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${seriesName}/images/productCase/${bean.imgName}${bean.imgSuffix}" alt="产品案例" class="img-responsive">
                                             </c:if>
                                             <c:if test="${newSeriesName!=null}">
-                                                <img src="${pageContext.request.contextPath}/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productCase/${bean.imgName}${bean.imgSuffix}" alt="产品案例" class="img-responsive">
+                                                <img src="http://www.tsuntien.com/userfiles/1/files/productSeries/cn-complex/${newSeriesName}/images/productCase/${bean.imgName}${bean.imgSuffix}" alt="产品案例" class="img-responsive">
                                             </c:if>
                                             <p>${bean.imgName}</p>
                                         </div>

@@ -107,7 +107,7 @@
                         <p> Publication time：<span><fmt:formatDate value="${article.updateDate}"/></span></p>
                     </div>
                     <div class="news-content">
-                        <img src="${pageContext.request.contextPath}/userfiles/1/images/news/${article.description}" alt="" class="text-center img-responsive">
+                        <img src="http://www.tsuntien.com/userfiles/1/images/news/${article.description}" alt="" class="text-center img-responsive">
                         ${article.articleData.content}
                     </div>
                     <div class="news-turn">
