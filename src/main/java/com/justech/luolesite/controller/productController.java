@@ -31,18 +31,39 @@ public class productController {
 
 	private String productscategoryid="e258a4ba24a74581bb799f53df5e4b54";//产品中心栏目id
 
-	private static final String seriesSimpleFrontPath="/userfiles/1/files/productSeries/cn-simple/";//简体版-产品系列前部文件路径
-	private static final String seriesComplexFrontPath="/userfiles/1/files/productSeries/cn-complex/";//繁体版-产品系列前部文件路径
-	private static final String seriesEnglishFrontPath="/userfiles/1/files/productSeries/english/";//英文版-产品系列前部文件路径
+	/**
+	 * window
+	 */
+	/*private static final String seriesSimpleFrontPath="E:/Tomcat/webapps/userfiles/1/files/productSeries/cn-simple/";//简体版-产品系列前部文件路径
+	private static final String seriesComplexFrontPath="E:/Tomcat/webapps/userfiles/1/files/productSeries/cn-complex/";//繁体版-产品系列前部文件路径
+	private static final String seriesEnglishFrontPath="E:/Tomcat/webapps/userfiles/1/files/productSeries/english/";//英文版-产品系列前部文件路径*/
+
+	/**
+	 * Linux
+	 */
+	private static final String seriesSimpleFrontPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/productSeries/cn-simple/";//简体版-产品系列前部文件路径
+	private static final String seriesComplexFrontPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/productSeries/cn-complex/";//繁体版-产品系列前部文件路径
+	private static final String seriesEnglishFrontPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/productSeries/english/";//英文版-产品系列前部文件路径
+
 
 	private static final String seriesProductIntroPath="/images/productIntroduce/";//产品系列产品简介文件路径
 	private static final String seriesProductParameterPath="/images/productParameter/";//产品系列产品参数文件路径
 	private static final String seriesProductCaseImgPath="/images/productCase/";//产品系列案例图片路径
 	private static final String seriesProductCaseVideoPath="/video/";//产品系列案例视频路径
 
-	private static final String seriesSimpleProductApplicationPath="/userfiles/1/files/productApplication/cn-simple/";//简体版-产品应用根目录路径
-	private static final String seriesComplexProductApplicationPath="/userfiles/1/files/productApplication/cn-complex/";//繁体版-产品应用根目录路径
-	private static final String seriesEnglishProductApplicationPath="/userfiles/1/files/productApplication/english/";//英文版-产品应用根目录路径
+	/**
+	 * window
+	 */
+	/*private static final String seriesSimpleProductApplicationPath="E:/Tomcat/webapps/userfiles/1/files/productApplication/cn-simple/";//简体版-产品应用根目录路径
+	private static final String seriesComplexProductApplicationPath="E:/Tomcat/webapps/userfiles/1/files/productApplication/cn-complex/";//繁体版-产品应用根目录路径
+	private static final String seriesEnglishProductApplicationPath="E:/Tomcat/webapps/userfiles/1/files/productApplication/english/";//英文版-产品应用根目录路径*/
+
+	/**
+	 * Linux
+	 */
+	private static final String seriesSimpleProductApplicationPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/productApplication/cn-simple/";//简体版-产品应用根目录路径
+	private static final String seriesComplexProductApplicationPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/productApplication/cn-complex/";//繁体版-产品应用根目录路径
+	private static final String seriesEnglishProductApplicationPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/productApplication/english/";//英文版-产品应用根目录路径
 
 	private static final String imagePath="/images/";//产品应用-图片目录
 	private static final String videoPath="/video/";//产品应用-视频目录

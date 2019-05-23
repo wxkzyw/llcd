@@ -33,7 +33,7 @@ public class frontWebService {
 		String imgurl = "";
 		String imgSuffix = "";
 
-		File file = new File(homePageImgsUrl);
+		File file = new File(homePagePath);
 		if (!file.exists()) {
 			file.mkdirs();
 		}
@@ -63,7 +63,7 @@ public class frontWebService {
 		String imgSuffix = "";
 
 
-		File file = new File(homePageImgsUrl);
+		File file = new File(homePagePath);
 		if (!file.exists()) {
 			file.mkdirs();
 		}
@@ -114,7 +114,7 @@ public class frontWebService {
 		String fileName = "";
 		String fileSuffix = "";
 
-		File file = new File(fileUrl);
+		File file = new File(Path);
 		if (!file.exists()) {
 			file.mkdirs();
 		}
@@ -233,7 +233,7 @@ public class frontWebService {
 		String fileName = "";
 		String fileSuffix = "";
 
-		File file = new File(fileUrl);
+		File file = new File(downloadPath);
 		if (!file.exists()) {
 			file.mkdirs();
 		}
@@ -462,7 +462,7 @@ public class frontWebService {
 	public List<String> getAllApplicaitonName(String applicaitonPath,HttpServletRequest request){
 		List<String> list=new ArrayList<String>();
 		String applicationDiskPath=request.getSession().getServletContext().getRealPath(applicaitonPath);//产品应用根目录路径
-		File file=new File(applicationDiskPath);
+		File file=new File(applicaitonPath);
 		if (!file.exists()){
 		file.mkdirs();
 		}

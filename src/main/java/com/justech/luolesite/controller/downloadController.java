@@ -33,7 +33,8 @@ public class downloadController {
 	@RequestMapping("/cnSimpleDirectoryList")
 	public ModelAndView downloadProductsDirectoryList(HttpServletRequest request){
 		ModelAndView modelAndView=new ModelAndView();
-        String directoryPath="/userfiles/1/files/download/cn-simple/productCatalog/";
+        /*String directoryPath="E:/Tomcat/webapps/userfiles/1/files/download/cn-simple/productCatalog/";//window*/
+		String directoryPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/download/cn-simple/productCatalog/";//linux
 		List<fileEntity> list=frontWebService.downloadProductpdf(request,directoryPath);
 		modelAndView.addObject("directories",list);
 		modelAndView.setViewName("luolePages/cn-simple/download-productsDirectory");
@@ -47,7 +48,8 @@ public class downloadController {
 	@RequestMapping("/cnSimpleManualList")
 	public ModelAndView downloadProductsManualList(HttpServletRequest request){
 		ModelAndView modelAndView=new ModelAndView();
-		String directoryPath="/userfiles/1/files/download/cn-simple/maintenanceManual/";
+		/*String directoryPath="E:/Tomcat/webapps/userfiles/1/files/download/cn-simple/maintenanceManual/";//window*/
+		String directoryPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/download/cn-simple/maintenanceManual/";//linux
 		List<fileEntity> list=frontWebService.downloadProductpdf(request,directoryPath);
 		modelAndView.addObject("directories",list);
 		modelAndView.setViewName("luolePages/cn-simple/download-productsManual");
@@ -56,16 +58,18 @@ public class downloadController {
 
 	@RequestMapping("/downloadProductsDirectory/{version}/{fileName}")
 	public void downliadProductsDirectory(@PathVariable("version") String version,@PathVariable("fileName") String fileName,HttpServletRequest request,HttpServletResponse response){
-		String path="/userfiles/1/files/download/"+version+"/productCatalog/";
+		/*String path="E:/Tomcat/webapps/userfiles/1/files/download/"+version+"/productCatalog/";*/
+		String path="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/download/"+version+"/productCatalog/";
 		String directoryPath=request.getSession().getServletContext().getRealPath(path);
-		frontWebService.download(response,directoryPath+fileName+".pdf");
+		frontWebService.download(response,path+fileName+".pdf");
 	}
 
 	@RequestMapping("/downloadProductsManual/{version}/{fileName}")
 	public void downliadProductsManual(@PathVariable("version") String version,@PathVariable("fileName") String fileName,HttpServletRequest request,HttpServletResponse response){
-		String path="/userfiles/1/files/download/"+version+"/maintenanceManual/";
+		/*String path="E:/Tomcat/webapps/userfiles/1/files/download/"+version+"/maintenanceManual/";*/
+		String path="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/download/"+version+"/maintenanceManual/";
 		String directoryPath=request.getSession().getServletContext().getRealPath(path);
-		frontWebService.download(response,directoryPath+fileName+".pdf");
+		frontWebService.download(response,path+fileName+".pdf");
 	}
 
 	/**
@@ -75,7 +79,8 @@ public class downloadController {
 	@RequestMapping("/cnComplexDirectoryList")
 	public ModelAndView downloadComplexProductsDirectoryList(HttpServletRequest request){
 		ModelAndView modelAndView=new ModelAndView();
-		String directoryPath="/userfiles/1/files/download/cn-complex/productCatalog/";
+		/*String directoryPath="E:/Tomcat/webapps/userfiles/1/files/download/cn-complex/productCatalog/";*/
+		String directoryPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/download/cn-complex/productCatalog/";
 		List<fileEntity> list=frontWebService.downloadProductpdf(request,directoryPath);
 		modelAndView.addObject("directories",list);
 		modelAndView.setViewName("luolePages/cn-complex/download-productsDirectory");
@@ -89,7 +94,8 @@ public class downloadController {
 	@RequestMapping("/cnComplexManualList")
 	public ModelAndView downloadComplexProductsManualList(HttpServletRequest request){
 		ModelAndView modelAndView=new ModelAndView();
-		String directoryPath="/userfiles/1/files/download/cn-complex/maintenanceManual/";
+		/*String directoryPath="E:/Tomcat/webapps/userfiles/1/files/download/cn-complex/maintenanceManual/";*/
+		String directoryPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/download/cn-complex/maintenanceManual/";
 		List<fileEntity> list=frontWebService.downloadProductpdf(request,directoryPath);
 		modelAndView.addObject("directories",list);
 		modelAndView.setViewName("luolePages/cn-complex/download-productsManual");
@@ -103,7 +109,8 @@ public class downloadController {
 	@RequestMapping("/englishDirectoryList")
 	public ModelAndView englishDirectoryList(HttpServletRequest request){
 		ModelAndView modelAndView=new ModelAndView();
-		String directoryPath="/userfiles/1/files/download/english/productCatalog/";
+		/*String directoryPath="E:/Tomcat/webapps/userfiles/1/files/download/english/productCatalog/";*/
+		String directoryPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/download/english/productCatalog/";
 		List<fileEntity> list=frontWebService.downloadProductpdf(request,directoryPath);
 		modelAndView.addObject("directories",list);
 		modelAndView.setViewName("luolePages/english/download-productsDirectory");
@@ -117,7 +124,8 @@ public class downloadController {
 	@RequestMapping("/englishManualList")
 	public ModelAndView englishManualList(HttpServletRequest request){
 		ModelAndView modelAndView=new ModelAndView();
-		String directoryPath="/userfiles/1/files/download/english/maintenanceManual/";
+		/*String directoryPath="E:/Tomcat/webapps/userfiles/1/files/download/english/maintenanceManual/";*/
+		String directoryPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/download/english/maintenanceManual/";
 		List<fileEntity> list=frontWebService.downloadProductpdf(request,directoryPath);
 		modelAndView.addObject("directories",list);
 		modelAndView.setViewName("luolePages/english/download-productsManual");
@@ -132,7 +140,8 @@ public class downloadController {
 	 */
 	@RequestMapping("/downFile/{filePath}")
 	public void downloadFile(HttpServletRequest request,HttpServletResponse response,@PathVariable String filePath){
-		filePath="/userfiles/1/files/video/"+filePath+".mp4";
+		/*filePath="E:/Tomcat/webapps/userfiles/1/files/video/"+filePath+".mp4";//window*/
+		filePath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/video/"+filePath+".mp4";//linux
 		File file=new File(filePath);
 		String userAgent=request.getHeader("User-Agent");
 		if (userAgent.contains("iPhone")||userAgent.contains("iPod")||userAgent.contains("iPad")){

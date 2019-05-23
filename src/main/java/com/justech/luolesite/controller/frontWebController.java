@@ -25,10 +25,21 @@ public class frontWebController {
     @Autowired
     private frontWebService frontWebService;
 
-    private static final String cnSimpleHomePagePath="/userfiles/1/images/homePage-cn-simple/";
-    private static final String cnComplexHomePagePath="/userfiles/1/images/homePage-cn-complex/";
-    private static final String englishHomePagePath="/userfiles/1/images/homePage-english/";
-    private static final String productCenterPath="/userfiles/1/images/ProductCenter/";
+    /**
+     * Windows环境下路径
+     */
+    /*private static final String cnSimpleHomePagePath="E:/Tomcat/webapps/userfiles/1/images/homePage-cn-simple/";
+    private static final String cnComplexHomePagePath="E:/Tomcat/webapps/userfiles/1/images/homePage-cn-complex/";
+    private static final String englishHomePagePath="E:/Tomcat/webapps/userfiles/1/images/homePage-english/";
+    private static final String productCenterPath="E:/Tomcat/webapps/userfiles/1/images/ProductCenter/";*/
+
+    /**
+     * Linux环境下路径
+     */
+    private static final String cnSimpleHomePagePath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/images/homePage-cn-simple/";
+    private static final String cnComplexHomePagePath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/images/homePage-cn-complex/";
+    private static final String englishHomePagePath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/images/homePage-english/";
+    private static final String productCenterPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/images/ProductCenter/";
     private static final String productscategoryid="e258a4ba24a74581bb799f53df5e4b54";//产品中心栏目id
 
 

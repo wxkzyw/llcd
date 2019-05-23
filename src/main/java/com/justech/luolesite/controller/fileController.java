@@ -51,13 +51,13 @@ public class fileController {
              String videoUpload="/videoUpload/";
              String videoUploadPath=request.getSession().getServletContext().getRealPath(videoUpload);
 
-             File file=new File(videoUploadPath);
+             File file=new File(videoUpload);
              if (!file.exists()){
                 file.mkdirs();//生成目录
              }
 
              String fileNewName= UUID.randomUUID().toString();
-             String targetFileName=videoUploadPath+File.separator+fileNewName+fileSuffix;
+             String targetFileName=videoUpload+File.separator+fileNewName+fileSuffix;
              File targetFile=new File(targetFileName);
 
                  try {
