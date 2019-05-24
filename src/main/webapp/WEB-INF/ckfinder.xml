@@ -1,7 +1,14 @@
 <config>
 	<enabled>true</enabled>
-	<baseDir></baseDir>
-	<baseURL>/userfiles/</baseURL>
+	<!--windows-->
+	<!--<baseDir>E:\Tomcat\webapps\userfiles</baseDir>
+	<baseURL>http://localhost:8080/userfiles/</baseURL>-->
+
+	<!--linux-->
+	<baseDir>/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles</baseDir>
+	<baseURL>http://www.tsuntien.com/userfiles/</baseURL>
+
+
 	<licenseKey></licenseKey>
 	<licenseName></licenseName>
 	<imgWidth>1920</imgWidth>
