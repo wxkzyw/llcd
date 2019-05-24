@@ -49,7 +49,7 @@ public class downloadController {
 	public ModelAndView downloadProductsManualList(HttpServletRequest request){
 		ModelAndView modelAndView=new ModelAndView();
 		/*String directoryPath="E:/Tomcat/webapps/userfiles/1/files/download/cn-simple/maintenanceManual/";//window*/
-		String directoryPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/download/cn-simple/maintenanceManual/";//linux
+		String directoryPath="/usr/tomcat/apache-tomcat-9.0.19/webapps/userfiles/1/files/download/cn-simple/maintenanceManual/";//linux
 		List<fileEntity> list=frontWebService.downloadProductpdf(request,directoryPath);
 		modelAndView.addObject("directories",list);
 		modelAndView.setViewName("luolePages/cn-simple/download-productsManual");
