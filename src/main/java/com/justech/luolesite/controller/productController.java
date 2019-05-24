@@ -98,10 +98,10 @@ public class productController {
 		String caseVideoPath=seriesSimpleFrontPath+seriesName+seriesProductCaseVideoPath;//产品案例图
 
 		//类别名包含一个&
-		if (seriesName.contains("&amp;")){
+		/*if (seriesName.contains("&amp;")){
 			String newSeriesName=seriesName.substring(0,seriesName.lastIndexOf(";")+1)+"amp;"+seriesName.substring(seriesName.lastIndexOf(";")+1);
 			modelAndView.addObject("newSeriesName",newSeriesName);
-		}
+		}*/
 
 		Map<String,Object> productIntros=frontWebService.introductionList(productid);
 		modelAndView.addObject("productIntros",productIntros);
@@ -185,10 +185,10 @@ public class productController {
 		String caseVideoPath=seriesComplexFrontPath+seriesName+seriesProductCaseVideoPath;//产品案例图
 
 		//类别名包含一个&
-		if (seriesName.contains("&amp;")){
+		/*if (seriesName.contains("&amp;")){
 			String newSeriesName=seriesName.substring(0,seriesName.lastIndexOf(";")+1)+"amp;"+seriesName.substring(seriesName.lastIndexOf(";")+1);
 			modelAndView.addObject("newSeriesName",newSeriesName);
-		}
+		}*/
 
 		Map<String,Object> productIntros=frontWebService.introductionList(productid);
 		modelAndView.addObject("productIntros",productIntros);
@@ -272,10 +272,10 @@ public class productController {
 		String caseVideoPath=seriesEnglishFrontPath+seriesName+seriesProductCaseVideoPath;//产品案例图
 
 		//类别名包含一个&
-		if (seriesName.contains("&amp;")){
+		/*if (seriesName.contains("&amp;")){
 			String newSeriesName=seriesName.substring(0,seriesName.lastIndexOf(";")+1)+"amp;"+seriesName.substring(seriesName.lastIndexOf(";")+1);
 			modelAndView.addObject("newSeriesName",newSeriesName);
-		}
+		}*/
 
 		Map<String,Object> productIntros=frontWebService.introductionList(productid);
 		modelAndView.addObject("productIntros",productIntros);
