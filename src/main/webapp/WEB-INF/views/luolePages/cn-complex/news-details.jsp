@@ -75,7 +75,7 @@
                         <ul class="dropdown-menu text-center language-list">
                             <li class="text-center"><a href="${pageContext.request.contextPath}/f/cnComplexNewsDetails/${article.id}">繁體</a></li>
                             <li class="text-center"><a href="${pageContext.request.contextPath}/f/cnSimpleNewsDetails/${simpleArticleID}">簡體</a></li>
-                            <li class="text-center"><a href="${pageContext.request.contextPath}/f/englishNewsDetails/${article.id}">英文</a></li>
+                            <li class="text-center"><a href="${pageContext.request.contextPath}/f/englishNewsDetails/${englishArticleID}">英文</a></li>
                         </ul>
                     </li>
                 </ul>
