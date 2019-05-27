@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>村田精密股份有限公司</title>
+    <title>江蘇羅樂傳動有限公司</title>
     <!-- Bootstrap -->
     <link href="${ctxStatic}/css/bootstrap.min.css" rel="stylesheet">
     <!--common.css-->
@@ -49,14 +49,14 @@
                 </button>
                 <a class="navbar-brand navbar-left" href="${pageContext.request.contextPath}/f/cnComplexIndex">
                     <img src="${ctxStatic}/images/logo.png" alt="logo" class="img-responsive">
-                    <span class="navbar-text">村田精密股份有限公司</span>
+                    <span class="navbar-text">江蘇羅樂傳動有限公司</span>
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="nav-menu">
                 <ul class="nav navbar-nav text-center nav-list navbar-right">
                     <li><a href="${pageContext.request.contextPath}/f/cnComplexIndex">首頁</a></li>
-                    <li><a href="${pageContext.request.contextPath}/f/cnComplexAbout">關於村田</a></li>
+                    <li><a href="${pageContext.request.contextPath}/f/cnComplexAbout">關於羅樂</a></li>
                     <li><a href="${pageContext.request.contextPath}/f/cnComplexNewsList">新聞中心</a></li>
                     <li><a href="${pageContext.request.contextPath}/f/cnComplexProductList">產品中心</a></li>
                     <li><a href="${pageContext.request.contextPath}/f/cnComplexProductApplicaiton">產品應用</a></li>
@@ -156,33 +156,33 @@
             <div class="row">
                 <div class="footer-contact col-lg-12 col-md-12 col-sm-12">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 addr">
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-gongsi"></span></p>
-                                <p>村田精密股份有限公司</p>
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-dizhi1"></span></p>
-                                <p>43750台中市大甲區中山路一段312路</p>
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-iconfontdianhua4"></span></p>
-                                <p>04-26888973</p>
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-zuoji-"></span></p>
-                                <p>04-26888973</p>
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-youjian"></span></p>
-                                <p>support@tsuntien.com.tv</p>
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-wangzhi"></span></p>
-                                <p><a href="http://www.tsuntien.com/">www.tsuntien.com</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 addr">
+                        <%--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 addr">--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-gongsi"></span></p>--%>
+                                <%--<p>村田精密股份有限公司</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-dizhi1"></span></p>--%>
+                                <%--<p>43750台中市大甲區中山路一段312路</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-iconfontdianhua4"></span></p>--%>
+                                <%--<p>04-26888973</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-zuoji-"></span></p>--%>
+                                <%--<p>04-26888973</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-youjian"></span></p>--%>
+                                <%--<p>support@tsuntien.com.tv</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-wangzhi"></span></p>--%>
+                                <%--<p><a href="http://www.tsuntien.com/">www.tsuntien.com</a></p>--%>
+                            <%--</div>--%>
+                        <%--</div>--%>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 addr">
                             <div class="clearfix">
                                 <p class="pull-left"><span class="iconfont icon-gongsi"></span></p>
                                 <p>江蘇羅樂傳動有限公司（村田精密昆山工廠）</p>
@@ -212,32 +212,32 @@
                                 <p><a href="http://www.tsuntien.com/">www.tsuntien.com</a></p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 addr">
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-gongsi"></span></p>
-                                <p>村田精密華南營業部</p>
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-dizhi1"></span></p>
-                                <p>地址：深圳市龍華區觀瀾街道黎光工業區19號2樓</p>
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-iconfontdianhua4"></span></p>
-                                <p>電話：0755-23311144</p>
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-shouji"></span></p>
-                                <p>連絡人手機：18021291668（喬先生）</p>
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-youjian"></span></p>
-                                <p>E-mail：George.qiao@tsuntien.com</p>
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull-left"><span class="iconfont icon-wangzhi"></span></p>
-                                <p><a href="http://www.tsuntien.com/">www.tsuntien.com</a></p>
-                            </div>
-                        </div>
+                        <%--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 addr">--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-gongsi"></span></p>--%>
+                                <%--<p>村田精密華南營業部</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-dizhi1"></span></p>--%>
+                                <%--<p>地址：深圳市龍華區觀瀾街道黎光工業區19號2樓</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-iconfontdianhua4"></span></p>--%>
+                                <%--<p>電話：0755-23311144</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-shouji"></span></p>--%>
+                                <%--<p>連絡人手機：18021291668（喬先生）</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-youjian"></span></p>--%>
+                                <%--<p>E-mail：George.qiao@tsuntien.com</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="clearfix">--%>
+                                <%--<p class="pull-left"><span class="iconfont icon-wangzhi"></span></p>--%>
+                                <%--<p><a href="http://www.tsuntien.com/">www.tsuntien.com</a></p>--%>
+                            <%--</div>--%>
+                        <%--</div>--%>
                     </div>
                 </div>
 
@@ -253,7 +253,7 @@
         </div>
 
         <p class="footer-bottom text-center">
-            Copyright © 2019 村田精密股份有限公司 All Rights Reserved<br />
+            Copyright © 2019 江蘇羅樂傳動有限公司 All Rights Reserved<br />
             <a href=" http://www.beian.miit.gov.cn/" target="_blank">苏ICP备19025059号-1</a>
         </p>
     </footer>
