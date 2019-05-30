@@ -185,7 +185,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 addr">
                             <div class="clearfix">
                                 <p class="pull-left"><span class="iconfont icon-gongsi"></span></p>
-                                <p>江苏罗乐传动有限公司（村田精密昆山工厂）</p>
+                                <p>江苏罗乐传动有限公司</p>
                             </div>
                             <div class="clearfix">
                                 <p class="pull-left"><span class="iconfont icon-dizhi1"></span></p>

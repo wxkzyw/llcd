@@ -191,7 +191,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 addr">
                             <div class="clearfix">
                                 <p class="pull-left"><span class="iconfont icon-gongsi"></span></p>
-                                <p>Jiangsu ROLA drive Co.,Ltd ( TSUNTIEN precision Kunshan factory )</p>
+                                <p>Jiangsu ROLA drive Co.,Ltd</p>
                             </div>
                             <div class="clearfix">
                                 <p class="pull-left"><span class="iconfont icon-dizhi1"></span></p>

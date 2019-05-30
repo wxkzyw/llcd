@@ -185,7 +185,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 addr">
                             <div class="clearfix">
                                 <p class="pull-left"><span class="iconfont icon-gongsi"></span></p>
-                                <p>江蘇羅樂傳動有限公司（村田精密昆山工廠）</p>
+                                <p>江蘇羅樂傳動有限公司</p>
                             </div>
                             <div class="clearfix">
                                 <p class="pull-left"><span class="iconfont icon-dizhi1"></span></p>
